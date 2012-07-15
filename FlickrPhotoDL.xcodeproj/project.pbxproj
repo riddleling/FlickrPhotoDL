@@ -1,0 +1,302 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251852AD15B07655003C6B64 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251852AC15B07655003C6B64 /* Cocoa.framework */; };
+		251852B715B07655003C6B64 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 251852B515B07655003C6B64 /* InfoPlist.strings */; };
+		251852B915B07655003C6B64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 251852B815B07655003C6B64 /* main.m */; };
+		251852BD15B07655003C6B64 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 251852BB15B07655003C6B64 /* Credits.rtf */; };
+		251852C015B07655003C6B64 /* FlickrPhotoDLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 251852BF15B07655003C6B64 /* FlickrPhotoDLAppDelegate.m */; };
+		251852C315B07656003C6B64 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 251852C115B07656003C6B64 /* MainMenu.xib */; };
+		251852CB15B15526003C6B64 /* RAFrSetInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 251852CA15B15526003C6B64 /* RAFrSetInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		251852A815B07655003C6B64 /* FlickrPhotoDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrPhotoDL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		251852AC15B07655003C6B64 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		251852AF15B07655003C6B64 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		251852B015B07655003C6B64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		251852B115B07655003C6B64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		251852B415B07655003C6B64 /* FlickrPhotoDL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrPhotoDL-Info.plist"; sourceTree = "<group>"; };
+		251852B615B07655003C6B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		251852B815B07655003C6B64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		251852BA15B07655003C6B64 /* FlickrPhotoDL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickrPhotoDL-Prefix.pch"; sourceTree = "<group>"; };
+		251852BC15B07655003C6B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		251852BE15B07655003C6B64 /* FlickrPhotoDLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickrPhotoDLAppDelegate.h; sourceTree = "<group>"; };
+		251852BF15B07655003C6B64 /* FlickrPhotoDLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrPhotoDLAppDelegate.m; sourceTree = "<group>"; };
+		251852C215B07656003C6B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		251852C915B15526003C6B64 /* RAFrSetInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFrSetInfo.h; sourceTree = "<group>"; };
+		251852CA15B15526003C6B64 /* RAFrSetInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFrSetInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		251852A515B07655003C6B64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251852AD15B07655003C6B64 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2518529D15B07655003C6B64 = {
+			isa = PBXGroup;
+			children = (
+				251852B215B07655003C6B64 /* FlickrPhotoDL */,
+				251852AB15B07655003C6B64 /* Frameworks */,
+				251852A915B07655003C6B64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		251852A915B07655003C6B64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				251852A815B07655003C6B64 /* FlickrPhotoDL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		251852AB15B07655003C6B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251852AC15B07655003C6B64 /* Cocoa.framework */,
+				251852AE15B07655003C6B64 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		251852AE15B07655003C6B64 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				251852AF15B07655003C6B64 /* AppKit.framework */,
+				251852B015B07655003C6B64 /* CoreData.framework */,
+				251852B115B07655003C6B64 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		251852B215B07655003C6B64 /* FlickrPhotoDL */ = {
+			isa = PBXGroup;
+			children = (
+				251852C915B15526003C6B64 /* RAFrSetInfo.h */,
+				251852CA15B15526003C6B64 /* RAFrSetInfo.m */,
+				251852BE15B07655003C6B64 /* FlickrPhotoDLAppDelegate.h */,
+				251852BF15B07655003C6B64 /* FlickrPhotoDLAppDelegate.m */,
+				251852C115B07656003C6B64 /* MainMenu.xib */,
+				251852B315B07655003C6B64 /* Supporting Files */,
+			);
+			path = FlickrPhotoDL;
+			sourceTree = "<group>";
+		};
+		251852B315B07655003C6B64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				251852B415B07655003C6B64 /* FlickrPhotoDL-Info.plist */,
+				251852B515B07655003C6B64 /* InfoPlist.strings */,
+				251852B815B07655003C6B64 /* main.m */,
+				251852BA15B07655003C6B64 /* FlickrPhotoDL-Prefix.pch */,
+				251852BB15B07655003C6B64 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		251852A715B07655003C6B64 /* FlickrPhotoDL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 251852C615B07656003C6B64 /* Build configuration list for PBXNativeTarget "FlickrPhotoDL" */;
+			buildPhases = (
+				251852A415B07655003C6B64 /* Sources */,
+				251852A515B07655003C6B64 /* Frameworks */,
+				251852A615B07655003C6B64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickrPhotoDL;
+			productName = FlickrPhotoDL;
+			productReference = 251852A815B07655003C6B64 /* FlickrPhotoDL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2518529F15B07655003C6B64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FlickrPhotoDL;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 251852A215B07655003C6B64 /* Build configuration list for PBXProject "FlickrPhotoDL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2518529D15B07655003C6B64;
+			productRefGroup = 251852A915B07655003C6B64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				251852A715B07655003C6B64 /* FlickrPhotoDL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		251852A615B07655003C6B64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251852B715B07655003C6B64 /* InfoPlist.strings in Resources */,
+				251852BD15B07655003C6B64 /* Credits.rtf in Resources */,
+				251852C315B07656003C6B64 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		251852A415B07655003C6B64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				251852B915B07655003C6B64 /* main.m in Sources */,
+				251852C015B07655003C6B64 /* FlickrPhotoDLAppDelegate.m in Sources */,
+				251852CB15B15526003C6B64 /* RAFrSetInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		251852B515B07655003C6B64 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251852B615B07655003C6B64 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		251852BB15B07655003C6B64 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251852BC15B07655003C6B64 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		251852C115B07656003C6B64 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				251852C215B07656003C6B64 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		251852C415B07656003C6B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		251852C515B07656003C6B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		251852C715B07656003C6B64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrPhotoDL/FlickrPhotoDL-Prefix.pch";
+				INFOPLIST_FILE = "FlickrPhotoDL/FlickrPhotoDL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		251852C815B07656003C6B64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickrPhotoDL/FlickrPhotoDL-Prefix.pch";
+				INFOPLIST_FILE = "FlickrPhotoDL/FlickrPhotoDL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		251852A215B07655003C6B64 /* Build configuration list for PBXProject "FlickrPhotoDL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251852C415B07656003C6B64 /* Debug */,
+				251852C515B07656003C6B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		251852C615B07656003C6B64 /* Build configuration list for PBXNativeTarget "FlickrPhotoDL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				251852C715B07656003C6B64 /* Debug */,
+				251852C815B07656003C6B64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2518529F15B07655003C6B64 /* Project object */;
+}
