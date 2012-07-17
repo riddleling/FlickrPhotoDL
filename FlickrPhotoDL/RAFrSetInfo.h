@@ -29,7 +29,6 @@
 
 
 
-
 #import <Foundation/Foundation.h>
 
 @interface RAFrSetInfo : NSObject

@@ -29,7 +29,6 @@
 
 
 
-
 #import "FlickrPhotoDLAppDelegate.h"
 #import <dispatch/dispatch.h>
 #import "RAFrSetInfo.h"
@@ -155,12 +154,10 @@
         [progress startAnimation:self];
         
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            
             for (NSString *frURLStr in list)
             {
                 if (!isStartDownload) {
                     // isStartDownload == NO, stop downloading...
-                    //NSLog(@"Stop downloading...");
                     break;
                 }
                 RAFrSetInfo *frset = [[RAFrSetInfo alloc] initWithFlickrSetURL:frURLStr];
@@ -184,17 +181,13 @@
                          }
                          
                          NSInteger maxSteps = [imageURLs count];
-                         
-                         // Update status label
                          NSString *statusStr1 = [[NSString alloc] initWithFormat:@"(0/%ld)  Downloading: %@, set-%@", maxSteps, flickrName, flickrSetNum];
-                         dispatch_sync(dispatch_get_main_queue(), ^{
-                             [label setStringValue:statusStr1];
-                         });
                          
-                         // Update progress indicator
-                         dispatch_sync(dispatch_get_main_queue(), ^{
+                         // Update progress indicator and label
+                         dispatch_async(dispatch_get_main_queue(), ^{
                              [progress setMinValue:0.0];
                              [progress setMaxValue:(double)maxSteps];
+                             [label setStringValue:statusStr1];
                              
                              if ([progress isIndeterminate]) {
                                  [progress setDoubleValue:0.0];
@@ -211,11 +204,9 @@
                                  BOOL notIsOriginal = !isOriginal;
                                  fileURL = [frset convertToFileURL:tempURL isOriginalSize:notIsOriginal];
                              }
-                             //NSLog(@"%f : %@", steps, fileURL);
                              
                              if (!isStartDownload) {
                                  // isStartDownload == NO, stop downloading...
-                                 //NSLog(@"Stop download jpg file...");
                                  return;
                              }
                              
@@ -225,7 +216,7 @@
                              [self downloadFile:fileURL savePath:dlPath];
                              
                              // Update progress indicator and label
-                             dispatch_sync(dispatch_get_main_queue(), ^{
+                             dispatch_async(dispatch_get_main_queue(), ^{
                                  [progress setDoubleValue:steps];
                                  [label setStringValue:statusStr2];
                              });
@@ -233,7 +224,7 @@
                          }
                          
                          // Update progress indicator
-                         dispatch_sync(dispatch_get_main_queue(), ^{
+                         dispatch_async(dispatch_get_main_queue(), ^{
                              [progress setDoubleValue:0.0];
                          });
                      }]; // download handler blocks end.

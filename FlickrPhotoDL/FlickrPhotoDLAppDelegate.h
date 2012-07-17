@@ -29,7 +29,6 @@
 
 
 
-
 #import <Cocoa/Cocoa.h>
 
 @interface FlickrPhotoDLAppDelegate : NSObject <NSApplicationDelegate, NSTableViewDataSource, NSTableViewDelegate>

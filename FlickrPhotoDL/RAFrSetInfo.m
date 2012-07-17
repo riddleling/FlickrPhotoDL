@@ -29,7 +29,6 @@
 
 
 
-
 #import "RAFrSetInfo.h"
 
 @interface RAFrSetInfo (RAPrivateMethods)
