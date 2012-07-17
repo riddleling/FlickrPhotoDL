@@ -81,13 +81,8 @@
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
 {
-    if (flag) {
-        return NO;
-    }
-    else {
-        [_window makeKeyAndOrderFront:self];
-        return YES;
-    }
+    [_window makeKeyAndOrderFront:self];
+    return YES;
 }
 
 - (void)awakeFromNib
