@@ -4,7 +4,11 @@
 
 下載的相片會儲存到``~/Downloads/FlickrPhotos/``資料夾裡。
 
-![image](http://farm9.staticflickr.com/8026/7596868486_6dda2ee3fc_b.jpg)
+![image](http://farm8.staticflickr.com/7125/7604796774_ef441e46d7_b.jpg)
+
+## 系統需求
+
+Mac OS X 10.7+
 
 ## 軟體授權 (License)
 
