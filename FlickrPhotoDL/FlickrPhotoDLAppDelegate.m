@@ -117,9 +117,12 @@
 
 - (IBAction)addItem:(id)sender
 {
-    [list addObject:[flickrSetURLTextField stringValue]];
-    [flickrSetURLTextField setStringValue:@""];
-    [tableView reloadData];
+    NSString *str = [flickrSetURLTextField stringValue];
+    if (![str isEqualToString:@""]) {
+        [list addObject:str];
+        [flickrSetURLTextField setStringValue:@""];
+        [tableView reloadData];
+    }
 }
 
 - (IBAction)removeItem:(id)sender
